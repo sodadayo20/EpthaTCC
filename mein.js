@@ -1,5 +1,7 @@
+import './src/mp3.js';
+
 // ./icons/vllage3E.png
-const imageSetup  = {
+const imageSetup = {
     'vllage3E': {
         t: '.png'
     },

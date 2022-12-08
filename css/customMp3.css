@@ -1,0 +1,77 @@
+.controller.contin {
+    display: flex;
+}
+
+.controller.contin .timeCont {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#audio-player-container {
+    height: initial;
+    background-color: transparent;
+}
+
+element.style {
+    --seek-before-width: 10%;
+    --buffered-width: 100%;
+}
+
+#audio-player-container {
+    height: initial;
+    background-color: transparent;
+}
+
+#audio-player-container {
+    --seek-before-width: 0%;
+    --volume-before-width: 100%;
+    --buffered-width: 0%;
+    position: relative;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 500px;
+    height: 132px;
+}
+
+
+user agent stylesheet div {
+    display: block;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: var(--t_col_h);
+}
+
+:root {
+    --t_col_h: #5fb8a9;
+    --t-col_w: #5f9397;
+}
+
+
+#audio-player-container input[type="range"] {
+    float: unset;
+    margin: 0;
+    width: 98%;
+}
+
+#audio-player-container .time {
+    margin: 0 10px;
+}
+
+#audio-player-container output#volume-output {
+    margin: 10px 10px 10px 20px;
+}
+
+.timeCont div {
+    text-align: center;
+}
+
+#play-icon {
+    margin: 0;
+}

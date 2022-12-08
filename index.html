@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="mein.css">
-    <script src="./imgReplacer.js"></script>
-    <script src="./mein.js"></script>
+    <link rel="stylesheet" href="./css/mein.css">
+    <link rel="stylesheet" href="./css/mp3.css">
+    <link rel="stylesheet" href="./css/customMp3.css">
+    <script src="./src/imgReplacer.js"></script>
+    <script src="./mein.js" type="module"></script>
 </head>
 
 <body>
-    <div class="topBack"></div>
-    <div class="cont">
+    <div class="topBack" data-url="./icons/top.svg"></div>
+    <div class="cont planet">
         <header>
             <h2>Chatting</h2>
         </header>
@@ -24,15 +26,52 @@
             <span>네, 완벽?은 아니지만 만족합니다...{vllage3Ureshi}{vllage3Ureshi}</span>
             <span> 어려웠던 점은 배경의 행성을 svg로 복제하느라 직접 그리다시피 했네여.</span>
         </main>
-        <img class="cir" src="./result.svg" alt="Ephta css back">
+        <img class="cir" src="./icons/planet.svg" alt="Ephta css back">
         <footer>@ASTERI_EPHTA</footer>
     </div>
+    <div class="cont extra">
+        <h3>페이지 주인장의 노래 Pick!</h3>
+        <div id="audio-player-container">
+            <audio src="" preload="metadata"></audio>
+
+            <div class="controller contin">
+                <button id="play-icon"></button>
+                <div class="timeCont">
+                    <span id="current-time" class="time">0:00</span>
+                    <div>
+                        <select name="trackList" id="trackList">
+                            <option value="./music/[Eptha] anohana.mp3" selected>에프타의 그날 본 그꽃은...(아노하나)</option>
+                            <option value="./music/[Eptha] nanndemonaiya.mp3">에프타의 난데모나이야 (너의 이름은 OST)</option>
+                            <option value="./music/[Eptha] Stay Alive.mp3">에프타가 부르는 Stay Alive (리제로 에밀리아의 노래)</option>
+                        </select>
+                        <input type="range" id="seek-slider" max="100" value="0">
+                    </div>
+
+                    <span id="duration" class="time">0:00</span>
+                </div>
+            </div>
+            <div class="controller contin">
+                <div class="timeCont">
+                    <output id="volume-output">100</output>
+                    <input type="range" id="volume-slider" max="100" value="100">
+                    <button id="mute-icon"></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <footer>
-      <a href="https://www.twitch.tv/v_llage_ephta">
-        <img src="./tw_icon.svg" alt="">
-        <span>ASTERI_EPHTA</span>
-      </a>
-        </footer>
+        <a href="https://www.twitch.tv/v_llage_ephta" target="_blank">
+            <img src="./icons/tw_icon.svg" alt="">
+            <span>ASTERI_EPHTA (에프타의 트위치)</span>
+        </a>
+        <a href="https://github.com/sodadayo20/EpthaTCC" target="_blank">
+            <img src="./icons/github.svg" alt="" style="background-color: #fff;">
+            <span>이 페이지 깃허브</span>
+        </a>
+        <p>mp3들은 <b><a href="https://v-llage.com/posts/5866?boardViewTarget=liver&boardViewType=all" target="_blank">고수셀러드</a></b>님이 잘라와주신 에프타가 부른 노래들을 사용했어요.</p>
+        <p>이모티콘은 구글 검색하다 나온것입니다.</p>
+    </footer>
 </body>
 
 </html>
