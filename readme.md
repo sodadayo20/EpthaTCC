@@ -10,6 +10,10 @@ JUST FUN.
 # update Log
 - [v] 체팅창 구현됨.
 - [v] mp3플레이어 추가됨.
+- [v] 마우스 커서(하얀 삼각형 대신 별) 아이콘 추가  
+(모바일에선 안보임.)
+- [ ] 노래 재생리스트 `data.json` 에서 자동생성
+- [ ] 노래 재생시 가사 표시.
 
 # used asset
 - mp3들은 [고수셀러드](https://v-llage.com/posts/5866?boardViewTarget=liver&boardViewType=all) 님이 잘라와주신 에프타가 부른 노래들을 사용했어요.

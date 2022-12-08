@@ -35,25 +35,6 @@ element.style {
     height: 132px;
 }
 
-
-user agent stylesheet div {
-    display: block;
-}
-
-html,
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #000;
-    color: var(--t_col_h);
-}
-
-:root {
-    --t_col_h: #5fb8a9;
-    --t-col_w: #5f9397;
-}
-
-
 #audio-player-container input[type="range"] {
     float: unset;
     margin: 0;

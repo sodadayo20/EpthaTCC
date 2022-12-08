@@ -7,10 +7,9 @@ html,
 body {
     padding: 0;
     margin: 0;
-    /* width: 100%;
-    height: 100%; */
     background-color: #000;
     color: var(--t_col_h);
+    cursor: url('../icons/star.png'), auto;
 }
 
 .cont {
