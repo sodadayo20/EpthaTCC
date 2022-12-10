@@ -28,9 +28,10 @@
         </main>
         <iframe class="iframe"
             src="https://www.twitch.tv/embed/v_llage_ephta/chat?darkpopout&parent=sodadayo20.github.io" height="300px"
-            width="250px" title="twitch chat" sandbox='allow-scripts allow-same-origin'>
+            width="250px" title="twitch chat" onload="console.log('show?')
+            document.querySelector('iframe').classList.toggle('show');
+            document.querySelector('main.chat').classList.toggle('show');" sandbox='allow-scripts allow-same-origin'>
         </iframe>
-</iframe>
         <img class="cir" src="./icons/planet.svg" alt="Ephta css back">
         <footer>@ASTERI_EPHTA</footer>
     </div>
