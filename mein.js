@@ -1,13 +1,13 @@
 import './src/mp3.js';
 
 // ./icons/vllage3E.png
-const load = async () => {
-    let iframe = document.getElementsByTagName('iframe')[0];
-    iframe.onload = () => {
+window.onload = async function () {
+    let iframe = document.querySelector('iframe');
+    iframe.addEventListener("load", function () {
         console.log('show?')
         iframe.classList.toggle('show');
         document.querySelector('main.chat').classList.toggle('show');
-    }
+    });
     const setups = await (await fetch('./data.json')).json();
     const imageSetup = setups.emojiSetup;
     const musicObj = setups.musics;
@@ -19,6 +19,4 @@ const load = async () => {
     })
     const ir = new imgRep(document.querySelector('.cont main'), imageSetup)
     ir.replaceAll();
-
-}
-window.onload = load;
+};
