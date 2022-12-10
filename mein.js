@@ -2,12 +2,12 @@ import './src/mp3.js';
 
 // ./icons/vllage3E.png
 window.onload = async function () {
-    let iframe = document.querySelector('iframe');
-    iframe.addEventListener("load", function () {
+
+    document.querySelector('iframe').onload = function () {
         console.log('show?')
-        iframe.classList.toggle('show');
+        document.querySelector('iframe').classList.toggle('show');
         document.querySelector('main.chat').classList.toggle('show');
-    });
+    };
     const setups = await (await fetch('./data.json')).json();
     const imageSetup = setups.emojiSetup;
     const musicObj = setups.musics;
