@@ -10,7 +10,9 @@ const load = async () => {
         op.value = e[0];
         op.innerHTML = e[1];
         document.querySelector('select#trackList').append(op);
-        document.getElementsByTagName('iframe')[0].onload = ()=>{
+        let iframe = document.getElementsByTagName('iframe')[0];
+        iframe.onload = () => {
+            iframe.classList.toggle('show');
             document.querySelector('main.chat').classList.toggle('show');
         }
     })

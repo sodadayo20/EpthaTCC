@@ -147,6 +147,12 @@ select#trackList option:checked {
     display: none;
 }
 
+.iframe.show {
+    margin: 39px 80px 80px 80px;
+    z-index: 20;
+    position: absolute;
+}
+
 footer {
     text-align: center;
     display: flex;
