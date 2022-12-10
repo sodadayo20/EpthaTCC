@@ -148,6 +148,7 @@ select#trackList option:checked {
 }
 
 .iframe.show {
+    display: block;
     margin: 39px 80px 80px 80px;
     z-index: 20;
     position: absolute;
