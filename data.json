@@ -1,0 +1,34 @@
+{
+    "emojiSetup": {
+        "vllage3E": {
+            "t": ".png"
+        },
+        "vllage3Oenbong": {
+            "t": ".gif"
+        },
+        "vllage3Sarang": {
+            "t": ".png"
+        },
+        "vllage3Ureshi": {
+            "t": ".gif"
+        }
+    },
+    "musics": [
+        [
+            "./music/[Eptha] anohana.mp3",
+            "에프타의 그날 본 그꽃은...(아노하나)"
+        ],
+        [
+            "./music/[Eptha] nanndemonaiya.mp3",
+            "에프타의 난데모나이야 (너의 이름은 OST)"
+        ],
+        [
+            "./music/[Eptha] Stay Alive.mp3",
+            "에프타가 부르는 Stay Alive (리제로 에밀리아의 노래)"
+        ],
+        [
+            "./music/[Eptha] Kawaranai Mono.mp3",
+            "변하지 않는 것(시간을 달리는 소녀 OST)"
+        ]
+    ]
+}

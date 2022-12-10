@@ -20,12 +20,16 @@
             <h2>Chatting</h2>
         </header>
 
-        <main>
+        <main class="chat show">
             <span>한번 라이브 방송때의 체팅창만 Html로 구현 해 보았습니다</span>
             <span id="a">그냥.. 어쩌다 보니?! {vllage3E}</span>
             <span>네, 완벽?은 아니지만 만족합니다...{vllage3Ureshi}{vllage3Ureshi}</span>
             <span> 어려웠던 점은 배경의 행성을 svg로 복제하느라 직접 그리다시피 했네여.</span>
         </main>
+        <iframe class="iframe"
+            src="https://www.twitch.tv/embed/v_llage_ephta/chat?darkpopout&parent=sodadayo20.github.io/EpthaTCC/" height="300px"
+            width="250px" title="twitch chat" sandbox='allow-scripts allow-same-origin'>
+        </iframe>
         <img class="cir" src="./icons/planet.svg" alt="Ephta css back">
         <footer>@ASTERI_EPHTA</footer>
     </div>
@@ -39,11 +43,7 @@
                 <div class="timeCont">
                     <span id="current-time" class="time">0:00</span>
                     <div>
-                        <select name="trackList" id="trackList">
-                            <option value="./music/[Eptha] anohana.mp3" selected>에프타의 그날 본 그꽃은...(아노하나)</option>
-                            <option value="./music/[Eptha] nanndemonaiya.mp3">에프타의 난데모나이야 (너의 이름은 OST)</option>
-                            <option value="./music/[Eptha] Stay Alive.mp3">에프타가 부르는 Stay Alive (리제로 에밀리아의 노래)</option>
-                        </select>
+                        <select name="trackList" id="trackList"></select>
                         <input type="range" id="seek-slider" max="100" value="0">
                     </div>
 
@@ -69,7 +69,8 @@
             <img src="./icons/github.svg" alt="" style="background-color: #fff;">
             <span>이 페이지 깃허브</span>
         </a>
-        <p>mp3들은 <b><a href="https://v-llage.com/posts/5866?boardViewTarget=liver&boardViewType=all" target="_blank">고수셀러드</a></b>님이 잘라와주신 에프타가 부른 노래들을 사용했어요.</p>
+        <p>mp3들은 <b><a href="https://v-llage.com/posts/5866?boardViewTarget=liver&boardViewType=all"
+                    target="_blank">고수셀러드</a></b>님이 잘라와주신 에프타가 부른 노래들을 사용했어요.</p>
         <p>이모티콘은 구글 검색하다 나온것입니다.</p>
     </footer>
 </body>
